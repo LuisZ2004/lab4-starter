@@ -7,7 +7,7 @@
  */
 function sumValues(num1, num2, add) {
     //Type checking to make sure they are numbers
-    if (typeof a !== 'number' || typeof b !== 'number') {
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
         return false;
     }
 
@@ -44,7 +44,7 @@ function discountPrices(prices, discount) {
 
     let discountedPrice = 0;
     for(let i = 0; i < length; i++) {
-        discountedPrice = prices[i] * (discount);
+        discountedPrice = prices[i] * (1- discount);
         discounted.push(discountedPrice);
     }
 
